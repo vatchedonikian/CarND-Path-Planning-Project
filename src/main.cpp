@@ -314,7 +314,7 @@ int main() {
                     }
                     
                     if (LCR) {
-                        lane += 1; //change lane to the right
+                        lane += 1; //change lane to the right 
                     }
                 }
                 
