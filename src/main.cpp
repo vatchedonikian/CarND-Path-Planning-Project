@@ -282,7 +282,7 @@ int main() {
                         int lane_des = lane-1;
                         if(left_d<(2+4*lane_des+2) && left_d>(2+4*lane_des-2)) {    //if there is a car in the left lane
                             double switch_car_s = sensor_fusion[i][5]; //get the car's distance
-                            if(switch_car_s>(car_s-15) && switch_car_s<(car_s+15)) {    //there is a car in the way.
+                            if(switch_car_s>(car_s-20) && switch_car_s<(car_s+15)) {    //there is a car in the way.
                                 LCL=false; //don't change lane
                             }
                         }
@@ -303,7 +303,7 @@ int main() {
                             int lane_des = lane+1;
                             if(left_d<(2+4*lane_des+2) && left_d>(2+4*lane_des-2)) {    //if there is a car in the left lane
                                 double switch_car_s = sensor_fusion[i][5]; //get the car's distance
-                                if(switch_car_s>(car_s-15) && switch_car_s<(car_s+15)) {    //there is a car in the way.
+                                if(switch_car_s>(car_s-20) && switch_car_s<(car_s+15)) {    //there is a car in the way.
                                     LCR=false; //don't change lane
                                 }
                             }
